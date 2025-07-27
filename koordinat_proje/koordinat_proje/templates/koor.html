@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koordinat</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='koor.css') }}">
+</head>
+<body>
+    <header>
+    <div style="background-color: rgb(0, 208, 255); " >
+   <center> <h1 style="color:black; width: 400px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">KOORDİNAT İŞLEMLERİ ARAYÜZÜ</h1> </center> 
+    </div>
+
+    <div>
+       <center><h3>YAPMAK İSTEDİĞİNİZ İŞLEMİ SEÇİNİZ</h3></center> 
+    </header></header>
+        <div class="div2">
+            <h2>KOORDİNAT BULUN </h2>
+            <br>
+            <form action="/bul" method="post" enctype="multipart/form-data" >
+                <input type="file" name="dosyam"  accept=".xlsx" > <br><br>   
+                <input type="submit" value="DOSYAYI YÜKLE" class="dosya_sec">
+            </form>
+        </div>
+        <div class="div3">
+            <h2>KOORDİNAT DOĞRULUĞU KONTROLÜ YAPIN</h2>
+            <form action="/dogruluk" method="post" enctype="multipart/form-data">
+                <input type="file" name="dosyam"  accept=".xlsx"> <br><br>
+                <input type="submit" value="DOSYAYI YÜKLE" class="dosya_sec">
+            </form>
+        </div>
+    </div>
+    
+
+</body>
+</html>
